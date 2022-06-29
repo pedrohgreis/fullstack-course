@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #f5f5f5;
+    position: relative;
+    box-shadow: 0 0 8px black;
+}
+
+.header h1{
+    padding-left: 16px;
+    text-transform: lowercase;
+    letter-spacing: -2px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.menu li{
+    position: relative;
+}
+
+.menu > li a{
+    text-decoration: none;
+    position: relative;
+    padding: 17px;
+    font-size: 14px;
+    color: #f5f5f5;
+    display: block;
+}
+
+ .menu li:hover{       /* the second menu it's on li, so when we take out the mouse and go down to the second li, I'll still be at the first li at the same time */
+    background-color: blue;
+}
+
+.menu li:hover > .submenu{
+    display: block;
+}
+
+ .submenu li:hover > .submenu{  /* When put the mouse over the submenu, any other submeny will appear */
+    display: block;
+}
+
+span:first-child{
+    color: blue;
+}
+
+span:last-child{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.submenu{
+    display: none;
+    list-style: none;
+    font-size: 12px;
+    position: absolute;
+    top: 47px;
+    left: 0;
+    background-color: blue;
+    min-width: 116%;
+}
+
+.submenu li{
+    position: relative;
+}
+
+.submenu li .submenu{
+    top: 0;
+    left: 100%;
+}
+
+.submenu li:hover{
+    background-color: rgb(20, 20, 99);
+}

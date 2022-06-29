@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+        :root{
+            --font_title: 'Abel', sans-serif;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(195, 209, 204);
+        }
+
+        .header{
+            background-image: url('invest_img.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 35vh;
+            box-sizing: content-box;
+            box-shadow: 0 0 1px 0.4px black;
+            opacity: 0.9;
+        }
+
+        .navbar{
+            background-color: rgba(212, 216, 214, 0.349);
+            padding: 30px;
+            font-variant: small-caps;
+            box-shadow: 0 0 1px 0.2px black;
+        }
+
+        .bar{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .bar a{
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        .navbar .bar a:hover{
+            color: darkblue;
+        }
+
+        #home:hover, #info:hover, #sell:hover, #contact:hover{
+            letter-spacing: 5px;
+        }
+
+         h1{
+            font-family: var(--font_title);
+            font-variant: small-caps;
+            font-size: 2rem;
+            letter-spacing: 4px;
+            text-align: center;
+            margin-top: 12px;
+            text-shadow: 0 0 1.2px black;
+        }
+
+        .contact{
+            background-color: #f5f5f5;
+            width: 300px;
+            padding: 40px;
+            margin-top: 34px;
+            margin-bottom: 34px;
+            box-shadow: 0 0 0.5px 0.4px black;
+        }
+
+        .contact li{
+            margin: 25px;
+        }
+
+        .contact li a{
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        .contact li a:hover{
+            text-decoration: underline;
+            color: darkblue;
+        }
+
+        .footer{
+        background-color: rgb(19, 17, 17);
+        font-variant: small-caps;
+        font-size: 1.5rem;
+        padding-top: 20px;
+        color: #f5f5f5;
+        }
+
+    .footer aside{
+        text-align: center;
+        font-style: oblique;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header"></header>
+
+    <nav class="navbar">
+        <ul class="bar">
+            <li id="home"><a href="index.html">home</a></li>
+            <li id="info"><a href="info.html">who we are</a></li>
+            <li id="sell"><a href="sell.html">what we sell</a></li>
+            <li id="contact"><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>Contact us</h1> 
+    <ul class="contact">
+        <li class="whats">Whatsapp: <a href="https//:wa.me/5565992899877">(65) 99289-9877</a></li>
+        <li class="mail">Email: <a href="mailto: pedrohgdreis@gmail.com? subject= Olá!">pedrohgdreis@gmail.com</a></li>
+    </ul>
+
+    <footer class="footer">
+        <aside>Developed by Pedro</aside>
+    </footer>
+</body>
+</html>

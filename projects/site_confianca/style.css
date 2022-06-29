@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root{
+        --font_title: 'Abel', sans-serif;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(195, 209, 204);
+}
+
+.header{
+    background-image: url('invest_img.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    box-sizing: content-box;
+    box-shadow: 0 0 1px 0.4px black;
+    opacity: 0.9;
+}
+
+.header img{
+    width: 250px;
+    margin-top: 6px;
+}
+
+.img{
+   text-align: center;
+}
+
+.content{
+    display: flex;
+    margin: 40px;
+}
+
+.content article{
+    width: 70%;
+    margin: 0 70px;
+    background-color: aliceblue;
+    padding: 80px;
+    border-radius: 16px 50px 18px 16px;
+}
+
+.content article h1{
+    font-family: var(--font_title);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.content p{
+    text-align: justify;
+}
+
+.content nav ul{
+    list-style: none;
+    background-color: #e0d6d6;
+    height: 50vh;
+    padding: 60px;
+}
+
+.content nav ul li{
+    text-align: center;
+}
+
+.content nav ul li a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.content nav ul li a:hover{
+    color: #e0d6d6;
+}
+
+.content nav ul li a:active{
+    color: darkblue;
+}
+
+.content #home,#info,#sell,#contact{
+    background-color: rgba(41, 41, 182, 0.705);
+    padding: 18px 58px;
+    white-space: nowrap;
+    border-radius: 8px 20px 10px 0px;
+    text-transform: capitalize;
+}
+
+.content #info, #sell, #contact{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.footer{
+    background-color: rgb(19, 17, 17);
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    padding-top: 50px;
+    color: #f5f5f5;
+}
+
+.footer aside{
+    text-align: center;
+    font-style: oblique;
+}
